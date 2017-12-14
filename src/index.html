@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>MovieApp</title>
+  <link rel="icon" type="image/png" href="assets/movie.png" sizes="32x32">
+  <base href="/">
+  <style>
+
+    body {
+      margin-top: 100px;
+      background-color: #137b85;
+      color: #fff;
+      text-align: center;
+    }
+
+    #loading {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255, 255, 255, .3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 1s ease-in-out infinite;
+      -webkit-animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes spin {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="ngsw-manifest.json">
+</head>
+
+<body>
+  <app-root>
+    <div id="loading"></div>
+  </app-root>
+</body>
+<noscript>
+  <h3 style="color: #673ab7; font-family: Helvetica; margin: 2rem;">
+      Sorry, but app is not available without javascript
+  </h3>
+</noscript>
+</html>
